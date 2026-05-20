@@ -1,4 +1,4 @@
-local G = require('globals')
+local G = require('modules.globals')
 
 -- KEYBINDS
 

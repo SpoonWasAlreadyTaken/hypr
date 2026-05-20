@@ -1,4 +1,4 @@
-local G = require('globals')
+local G = require('modules.globals')
 
 hl.on("hyprland.start", function ()
     hl.exec_cmd(G.terminal)

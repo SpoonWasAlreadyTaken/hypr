@@ -1,7 +1,8 @@
+require('modules.globals')
 require('modules.monitors')
 require('modules.binds')
 require('modules.autostart')
-require('modules.end')
+require('modules.env')
 require('modules.theme')
 require('modules.layout')
 
@@ -33,6 +34,9 @@ hl.config({
         kb_options = "",
         kb_rules   = "",
 
+        repeat_rate = 35,
+        repeat_delay = 200,
+
         follow_mouse = 1,
 
         sensitivity = 0, -- -1.0 - 1.0, 0 means no modification.
@@ -42,6 +46,7 @@ hl.config({
         },
     },
 })
+
 
 hl.gesture({
     fingers = 3,

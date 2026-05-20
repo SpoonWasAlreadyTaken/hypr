@@ -7,7 +7,14 @@
 hl.monitor({
     output   = "",
     mode     = "preferred",
-    position = "auto",
+    position = "0x0",
     scale    = "auto",
+})
+
+hl.monitor({
+    output = "",
+    mode = "preferred",
+    position = "1920x0",
+    scale = "auto",
 })
 
