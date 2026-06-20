@@ -14,7 +14,7 @@ hl.monitor({
 hl.monitor({
     output   = G.secondaryMonitor,
     mode     = "preferred",
-    position = "-1920x0",
+    position = "1920x0",
     scale    = "auto",
 })
 
