@@ -1,0 +1,177 @@
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: "Cascadia Mono", "JetBrainsMono Nerd Font Propo", "Font Awesome";
+    font-size: 16px;
+
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 0px;
+
+}
+
+window#waybar {
+    background: transparent;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+
+#workspaces {
+    transition: all 150ms ease-in-out;
+}
+
+
+button:hover {
+    background: inherit;
+}
+
+
+#pulseaudio:hover {
+    background-color: #040405;
+    border: 1px solid #6f009c;
+}
+
+
+#workspaces button {
+    padding: 0 8px;
+    margin: 0 3px;
+    background: #040405;
+    color: #ffffff;
+    border-bottom: 3px solid transparent;
+    transition: all 150ms ease-in-out;
+    font-weight: 700;
+}
+#workspaces button:hover {
+    background: #040405;
+    border: 1px solid #6f009c;
+}
+#workspaces button.focused, #workspaces button.active {
+    background-color: #ffffff;
+    color: #040405;
+    min-width: 25px;
+    transition: all 150ms ease-in-out;
+    font-weight: 700;
+
+}
+
+
+
+#clock,
+#cpu,
+#custom-gpu,
+#memory,
+#disk,
+#temperature,
+#network,
+#pulseaudio,
+#window,
+#user,
+#wireplumber {
+    padding: 0 10px;
+    color: #ffffff;
+}
+#window,
+#workspaces {
+    margin: 0 4px;
+}
+
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+
+
+
+
+#custom-leftDiv1 {
+    background-color: #040405;
+    color: #ffffff;
+    font-size: 23px;
+}
+#window {
+    background-color: #ffffff;
+    color: #040405;
+    padding: 0;
+    margin: 0;
+}
+#custom-rightDiv1 {
+    background-color: #040405;
+    color: #ffffff;
+    font-size: 23px;
+}
+#user {
+    background-color: #040405;
+    color: #ffffff;
+}
+
+
+
+
+
+#clock {
+    background-color: #040405;
+    font-weight: 700;
+}
+#cpu {
+    background-color: #040405;
+    color: #ffffff;
+}
+#custom-gpu {
+    background-color: #040405;
+    color: #ffffff;
+}
+#memory {
+    background-color: #040405;
+}
+#disk {
+    background-color: #040405;
+}
+#network {
+    background-color: #040405;
+}
+#network.disconnected {
+    background-color: #040405;
+}
+#pulseaudio {
+    background-color: #040405;
+    color: #ffffff;
+}
+#pulseaudio.muted {
+    background-color: #040405;
+    color: #424242;
+}
+#wireplumber {
+    background-color: #040405;
+    color: #ffffff;
+}
+#wireplumber.muted {
+    background-color: #040405;
+}
+#temperature {
+    background-color: #040405;
+}
+#temperature.critical {
+    background-color: #040405;
+}
+
+
+tooltip {
+    background: #040405;
+    border-radius: 8px;
+    color: #ff005d;
+    padding: 2px;
+    border: 1px solid #6f009c;
+}
+tooltip label {
+    background: #040405;
+    color: #ffffff;
+    font-size: 13px;
+    border-radius: 6px;
+}
