@@ -90,55 +90,99 @@ button:hover {
 
 
 
-#custom-leftDiv1 {
+
+
+    #custom-leftDiv7 {
+        background-color: #040405;
+        color: #ffffff;
+        font-size: 23px;
+    }
+#cpu {
     background-color: #040405;
     color: #ffffff;
-    font-size: 23px;
 }
+    #custom-leftDiv6 {
+        background-color: #040405;
+        color: #ffffff;
+        font-size: 23px;
+    }
+#custom-gpu {
+    background-color: #040405;
+    color: #ffffff;
+}
+    #custom-leftDiv5 {
+        background-color: #040405;
+        color: #ffffff;
+        font-size: 23px;
+    }
+#memory {
+    background-color: #040405;
+}
+    #custom-leftDiv4 {
+        background-color: #040405;
+        color: #ffffff;
+        font-size: 23px;
+    }
+#temperature {
+    background-color: #040405;
+}
+#temperature.critical {
+    background-color: #040405;
+} 
+    #custom-leftDiv3 {
+        background-color: #040405;
+        color: #ffffff;
+        font-size: 23px;
+    }
+    #custom-leftDiv2 {
+        background-color: #ffffff;
+        color: #040405;
+        font-size: 23px;
+    }
+    #custom-leftDiv1 {
+        background-color: #040405;
+        color: #ffffff;
+        font-size: 23px;
+    }
 #window {
     background-color: #ffffff;
     color: #040405;
     padding: 0;
     margin: 0;
 }
-#custom-rightDiv1 {
-    background-color: #040405;
-    color: #ffffff;
-    font-size: 23px;
-}
+    #custom-rightDiv1 {
+        background-color: #040405;
+        color: #ffffff;
+        font-size: 23px;
+    }
+    #custom-rightDiv2 {
+        background-color: #ffffff; 
+        color: #040405;
+        font-size: 23px;
+    }
+    #custom-rightDiv3 {
+        background-color: #040405;
+        color: #ffffff;
+        font-size: 23px;
+    }
 #user {
     background-color: #040405;
     color: #ffffff;
 }
-
-
-
-
-
+    #custom-rightDiv4 {
+        background-color: #040405;
+        color: #ffffff;
+        font-size: 23px;
+    }
 #clock {
     background-color: #040405;
     font-weight: 700;
 }
-#cpu {
-    background-color: #040405;
-    color: #ffffff;
-}
-#custom-gpu {
-    background-color: #040405;
-    color: #ffffff;
-}
-#memory {
-    background-color: #040405;
-}
-#disk {
-    background-color: #040405;
-}
-#network {
-    background-color: #040405;
-}
-#network.disconnected {
-    background-color: #040405;
-}
+    #custom-rightDiv5 {
+        background-color: #040405;
+        color: #ffffff;
+        font-size: 23px;
+    }
 #pulseaudio {
     background-color: #040405;
     color: #ffffff;
@@ -154,12 +198,27 @@ button:hover {
 #wireplumber.muted {
     background-color: #040405;
 }
-#temperature {
+    #custom-rightDiv6 {
+        background-color: #040405;
+        color: #ffffff;
+        font-size: 23px;
+    }
+#network {
     background-color: #040405;
 }
-#temperature.critical {
+#network.disconnected {
     background-color: #040405;
 }
+    #custom-rightDiv7 {
+        background-color: #040405;
+        color: #ffffff;
+        font-size: 23px;
+    }
+
+
+
+
+
 
 
 tooltip {
