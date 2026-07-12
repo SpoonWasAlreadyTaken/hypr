@@ -77,7 +77,7 @@ hl.window_rule({
 hl.on("hyprland.start", function ()
     hl.exec_cmd(G.terminal)
     hl.exec_cmd('swaync')
-    hl.exec_cmd('waybar -c ~/.config/hypr/waybar/config.jsonc -s ~/.config/hypr/waybar/style.css')
+    hl.exec_cmd('quickshell -p ~/.config/hypr/quickshell')
     hl.exec_cmd('hyprpaper')
     hl.exec_cmd('firefox')
 end)

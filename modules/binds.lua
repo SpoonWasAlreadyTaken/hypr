@@ -46,11 +46,7 @@ for i = 1, 10 do
 end
 
 
-
--- go to desktop
-hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
-
+hl.bind("ALT + TAB", hl.dsp.focus({ workspace = "e+1" }))
 
 
 -- Mouse controls 
