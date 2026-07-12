@@ -213,11 +213,18 @@ ShellRoot {
                     anchors.leftMargin: 12
 
                     Text { /* CPU */
-                        text: cpuUsage + "%" + " "
+                        text: cpuUsage + "%"
                         color: root.colorFGL
                         font { family: root.fontFamily; pixelSize: root.fontSize; bold: true }
                         Layout.alignment: Qt.AlignBaseline
                     } 
+
+                    Text { /* ICON */
+                        Layout.leftMargin: 0
+                        text: ""
+                        color: root.colorFGL
+                        font { family: root.fontIcon; pixelSize: root.fontSize; bold: true }
+                    }
 
                     Rectangle {
                         Layout.preferredWidth: 2
@@ -229,9 +236,16 @@ ShellRoot {
                     }
 
                     Text { /* MEMORY */
-                        text: memUsage + "%" + " "
+                        text: memUsage + "%"
                         color: root.colorFGL
                         font { family: root.fontFamily; pixelSize: root.fontSize; bold: true }
+                    }
+
+                    Text { /* ICON */
+                        Layout.leftMargin: 0
+                        text: ""
+                        color: root.colorFGL
+                        font { family: root.fontIcon; pixelSize: root.fontSize; bold: true }
                     }
 
                     Rectangle {
@@ -244,9 +258,16 @@ ShellRoot {
                     }
 
                     Text { /* GPU */
-                        text: gpuUsage + "%" + " 󰩪"
+                        text: gpuUsage + "%"
                         color: root.colorFGL
                         font { family: root.fontFamily; pixelSize: root.fontSize; bold: true }
+                    } 
+
+                    Text { /* ICON */
+                        Layout.leftMargin: 0
+                        text: "󰩪"
+                        color: root.colorFGL
+                        font { family: root.fontIcon; pixelSize: root.fontSize; bold: true }
                     }
                 }
 
@@ -324,11 +345,12 @@ ShellRoot {
                     anchors.rightMargin: 12
 
                     Text { /* NETWORK */
-                        id: network
                         text: online ? "online" : "offline"
                         color: online ? root.colorFGL : root.colorDim
                         font { family: root.fontFamily; pixelSize: root.fontSize; bold: true }
                     }
+
+
 
                     Rectangle {
                         Layout.preferredWidth: 2
@@ -340,9 +362,16 @@ ShellRoot {
                     }
 
                     Text { /* AUDIO */
-                        text: volumeLevel + "%" + root.volumeIcon
+                        text: volumeLevel + "%"
                         color: root.colorFGL
                         font { family: root.fontFamily; pixelSize: root.fontSize; bold: true }
+                    }
+
+                    Text { /* ICON */
+                        Layout.leftMargin: -8
+                        text: root.volumeIcon
+                        color: root.colorFGL
+                        font { family: root.fontIcon; pixelSize: root.fontSize; bold: true }
                     }
 
                     Rectangle {
