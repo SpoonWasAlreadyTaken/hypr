@@ -12,7 +12,7 @@ hl.config({
         border_size = 1,
 
         col = {
-            active_border   = { colors = {"rgba(e97dffff)", "rgba(ff005dff)"}, angle = 45 },
+            active_border   = { colors = {"rgba(f38ba8ff)", "rgba(ff005dff)"}, angle = 45 },
             inactive_border = "rgba(422549aa)",
         },
 
@@ -45,6 +45,8 @@ hl.config({
             size      = 5,
             passes    = 2,
             vibrancy  = 0.1696,
+            noise     = 0,
+            popups    = true,
         },
     },
 
@@ -53,12 +55,16 @@ hl.config({
     },
 })
 
+
+
 -- Default curves and animations, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
 hl.curve("easeOutQuint",   { type = "bezier", points = { {0.23, 1},    {0.32, 1}    } })
 hl.curve("easeInOutCubic", { type = "bezier", points = { {0.65, 0.05}, {0.36, 1}    } })
 hl.curve("linear",         { type = "bezier", points = { {0, 0},       {1, 1}       } })
 hl.curve("almostLinear",   { type = "bezier", points = { {0.5, 0.5},   {0.75, 1}    } })
 hl.curve("quick",          { type = "bezier", points = { {0.15, 0},    {0.1, 1}     } })
+
+
 
 -- Default springs
 hl.curve("easy",           { type = "spring", mass = 1, stiffness = 71.2633, dampening = 15.8273644 })
@@ -83,6 +89,7 @@ hl.animation({ leaf = "zoomFactor",    enabled = true,  speed = 7,    bezier = "
 
 
 
+
 -- Ref https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
 -- "Smart gaps" / "No gaps when only"
 -- uncomment all if you wish to use that.
@@ -100,4 +107,34 @@ hl.window_rule({
     border_size = 0,
     rounding    = 0,
  })
+
+
+-- swaync 
+hl.layer_rule({
+    name = "swaync-notifs",
+    match = { namespace = "swaync-notification-window", },
+    blur = true,
+    blur_popups = true,
+    ignore_alpha = 0.1,
+})
+
+hl.layer_rule({
+    name = "swaync-notifs-center",
+    match = { namespace = "swaync-control-center", },
+    blur = true,
+    blur_popups = true,
+    ignore_alpha = 0.1,
+})
+
+-- rofi
+hl.layer_rule ({
+    name = "rofi-popup",
+    match = { namespace = "rofi" },
+    animation = "popin",
+    dim_around = true,
+})
+
+
+
+
 
